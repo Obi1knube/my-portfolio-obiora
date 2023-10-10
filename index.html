@@ -1,20 +1,66 @@
-<!--Doctype tells the browser, it is and HTML -->
-<!DOCTYPE html>
-<!--html tag is the root tag of everything-->
-<html>
-<!--head is for extra information about the website, such as metadata snd Title-->
-<head>  
-        <!--this title is what is displayed in the browser-->
-        <title>Obiora Ezeasor</title>
+                    
+<!DOCTYPE html>  <!--Doctype tells the browser, it is and HTML -->
+<html lang="en-US">   <!--html tag is the root tag of everything. denotes the programming languagage used-->                    
+<head>               <!--head is for extra information about the website, such as metadata snd Title-->
+         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device=width, initial-scale=1.0">
+                    <!--Below is the Link to the style sheet-->
+                    <!--The rel attribute specifies relationship between linked documents-->
+                    <!--The href attribute creates a link to another file or webpage-->
+        <link rel="stylesheet" type="text/css" href="./Assets/css/style.css">
+
+                    
+        <title>Portfolio-Obiora-Ezeasor</title>   <!--this title is what is displayed in the browser, it will not be rendered on the webpage-->
 </head>
-    <!--body tag is actually the only part rendered to the page-->
-<body>
-        <!--P tag is for paragraph-->
-    <p>My first Webpage</p>
-    <p>This is my Portfolio</p>
 
+             
+<body>              <!--body tag is actually the only part rendered to the page-->
+                    
+           
+    <header>         <!--the header is the container for navigational links-->
+                   
+                    
+        <nav class="text-right">      <!-- A class is used to identify one or more elements-->
+            <ul>                    <!--ul tag is the wrap for unordered list.The list is wrapped in list item element li--->
+                   
+                <li> <a href="https://github.com/Obi1knube"> Github</a</li>  <!--<a> is a hyperlink element containing href attribute, that is set to a link-->                                                                        
+                <li> <a href="#"> Portfolio</a></li>     <!--the href attribute is set to "#" a placeholder link to navigate within the same webpage.-->
+                <li> <a href="#my Work"> My work</a></li>                                                                     
+                <li> <a href="#contact"> Contact</a></li> <!-- href="#contact." This is likely used to navigate to a section of the webpage with the id attribute "contact." Clicking this link would scroll the user's view to that section. The link text is "Contact."-->
+            </ul>
+        </nav>
 
+    </header>
+    <main>
+        <h1 class="Obiora Ezeasor"></h1>
+        <figure>
+            <img src="./Assets/Images/My profile pic.jpg" alt="photo of Obiora Obiora-Ezeasor">
+            <figcaption class="text-centre">Obiora Ezeasor</figcaption>
+
+        </figure>
+        <section id="contact">
+            <h2 class="text-centre">Contact Me</h2>
+            <form>
+                <ul>
+                    <li>
+                        <label class="text-right" for="name">Name</label>
+                        <input type="text" id="email" name="user name">
+                    </li>
+                    <li>
+                        <label class="text-right" for="email">Email:</label>
+                        <input type="text" id="email" name="user email">
+                    </li>
+                </ul>
+                <div class="text-centre">
+                    <button type="submit">SEND</button>
+                </div>
+            </form>
+        </section>
+    </main>
+  
+    <footer class="text-centre">
+        @ 2023 Maintenance Engineering insider Ltd
+
+    </footer>
 </body>
-
-
 </html>
