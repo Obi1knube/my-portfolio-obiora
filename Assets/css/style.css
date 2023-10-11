@@ -57,6 +57,15 @@
   
   figure {
     margin-bottom: 40px;
+    /*width: 200px;
+    height: 200px;*/
+  }
+  #photo{
+
+    width: 200px;
+    height: 200px;
+    display: flexbox;
+
   }
   
   img {
@@ -70,6 +79,15 @@
     border-top: 3px solid #DDAF94;
     background-color:  #E8CEBF;
   }
+  /*photobox for profile picture*/
+ /* .fit-picture{
+    margin: 0;
+    width: 500px;
+    padding: 10px;
+    border: solid;
+    
+  }
+  */
   
   form {
     /* Center the form on the page */
