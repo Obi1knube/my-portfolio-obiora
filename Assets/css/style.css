@@ -20,11 +20,23 @@
   text-decoration: none;
   color: white;
 }
+.nav > li > a:hover {
+  color: blue;
+ cursor: grab;
+}
 .main{
   background-color: aqua;
   /*text-decoration: none; */
   color: black;
 
+}
+.flex-container{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.col{
+  flex-direction: column;
 }
 /* TRYING TO GROUP EVERYTHING TO CENTRE AND SAVE SYNTAX WITH class:Text Center*/
 .text-center{
@@ -53,11 +65,33 @@
   margin: 10px 0;
   
 }
-.services>li>img{
-  padding: 0 10px;
-}
+.services a:hover{
+   
+     
+   
+
 #contact{
   display: flex;
   justify-content: center;
   margin: 10px 10px;
+ 
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+@media only screen and (max-width: 720px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .body {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
 }

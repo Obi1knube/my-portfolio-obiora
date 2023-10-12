@@ -23,24 +23,27 @@
                     
         <nav class="logo">      <!-- A class is used to identify one or more elements-->
             <ul class="nav">                    <!--ul tag is the wrap for unordered list.The list is wrapped in list item element li--->
-                <li> <a href="#my-Work"> My work</a></li>  
+                <li> <a href="#my-work"> My work</a></li>  
                 <li> <a href="#contact"> Contact</a></li> <!-- href="#contact." This is likely used to navigate to a section of the webpage with the id attribute "contact." Clicking this link would scroll the user's view to that section. The link text is "Contact."-->  
-                <li> <a href="https://github.com/Obi1knube"> Github</a</li>  <!--<a> is a hyperlink element containing href attribute, that is set to a link-->                                                                        
-                <li> <a href="#"> Portfolio</a></li>     <!--the href attribute is set to "#" a placeholder link to navigate within the same webpage.-->                                                             
+                <!--<li> <a href="https://github.com/Obi1knube"> Github</a</li>-->  <!--<a> is a hyperlink element containing href attribute, that is set to a link-->                                                                        
+               <!--the href attribute is set to "#" a placeholder link to navigate within the same webpage.-->                                                             
                
             </ul>
         </nav>
     </header>
     <main class="main">
-        <h1 class= "text-center"><strong>Obiora Ezeasor</strong></h1>
-        <figure>
-            <div class="fit-picture">
-            <img src="./Assets/Images/My profile pic resized .jpg" alt="photo of Obiora Obiora-Ezeasor">
+       
+            <div class="flex-container">
+                <img src="./Assets/Images/My profile pic resized .jpg" alt="photo of Obiora Obiora-Ezeasor" >
+                <div class="flex-container col">
+                    <h1><strong>Obiora Ezeasor</strong></h1>
+                    <p>To do add ABOUT ME section</p>
+                </div>
+
             </div>
-            <figcaption class="text-center">My Work</figcaption>
-        </figure>
-        <section class="my-work">
-            <ul class="services">
+     
+        <section id="my-work">   <!--the id will bring on the corresponding nav "#my-work" link to this spot-->
+            <ul class="services"> 
               <li>   <img src="./Assets/Images/image-1.png">
                     <h2>Online reputation Management</h2>
                     <p class="text-center">
@@ -50,7 +53,7 @@
                  </p>
              </li> 
               <li>   <img src="./Assets/Images/image-1.png">
-                    <h2>We design</h2>
+                    <h2>webpage design</h2>
                   <p class="text-center">
                      The web is full of opinions, and some of these can be negative. Social media allows any
                      with an internet connection to say whatever they want about your business.
@@ -75,8 +78,8 @@
              </li> 
          </ul>
         </section>
-        <section id="contact">
-            <h2 class="text-center">Contact Me</h2>
+        <section id="contact" class="flex-container">
+            <h2>Contact Me</h2>
             <form>
                 <ul>
                     <li>
@@ -88,14 +91,14 @@
                         <input type="text" id="email" name="user email">
                     </li>
                 </ul>
-                <div class="text-center">
+                <div>
                     <button type="submit">SEND</button>
                 </div>
             </form>
         </section>
     </main>
   
-    <footer class="text-center">
+    <footer class=" flex-container">
         @ 2023 Maintenance Engineering insider Ltd
 
     </footer>
