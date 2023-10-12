@@ -1,0 +1,63 @@
+/* class header is the container for nav bar */
+.header{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content:space-between;
+  background-color: rgb(7, 128, 33);
+
+}
+.nav{
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 0;
+}
+
+.nav >li {
+  padding: 0 10px;
+
+}
+.nav > li > a {
+  text-decoration: none;
+  color: white;
+}
+.main{
+  background-color: aqua;
+  /*text-decoration: none; */
+  color: black;
+
+}
+/* TRYING TO GROUP EVERYTHING TO CENTRE AND SAVE SYNTAX WITH class:Text Center*/
+.text-center{
+  display: flex;
+  justify-content: center;
+  margin: 5px 10px;
+  padding: 10px 10px;
+}
+/*this will allow me to easily move picture around later */
+.fit-picture{
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+/* my work container */
+.my-work{
+  display: flex;
+  justify-content: space-around;
+}
+.services{
+  display: flex;
+  justify-content: first baseline;
+
+}
+.services>li{
+  margin: 10px 0;
+  
+}
+.services>li>img{
+  padding: 0 10px;
+}
+#contact{
+  display: flex;
+  justify-content: center;
+  margin: 10px 10px;
+}
