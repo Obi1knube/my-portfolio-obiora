@@ -65,9 +65,9 @@
   margin: 10px 0;
   
 }
-.services a:hover{
-   
-     
+.services img:hover{
+   transform: scale(1.1);
+}
    
 
 #contact{
@@ -82,7 +82,7 @@
   margin: 5px 0;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 720px) { /*gives screen size adaptability*/
   .header {
     flex-direction: column;
     justify-content: center;
@@ -93,5 +93,7 @@
     justify-content: center;
     align-items: center;
   }
-
+  .services {
+    flex-direction: column;
+  }
 }
